@@ -1,0 +1,38 @@
+create database tindahan;
+
+create table Inventory (
+    Category VARCHAR(50),
+    ProductName VARCHAR(50),
+    UnitPrice DECIMAL(10, 2),
+    Quantity INT,
+    ExpiryDate DATE,
+    Expired INT
+);
+
+
+INSERT INTO Inventory (Category, ProductName, UnitPrice, Quantity, ExpiryDate, Expired) VALUES
+('Beverages', 'Soft Drink', 20, 10, '2024-05-01', 0),
+('Beverages', 'Bottled Water', 15, 15, '2025-08-15', 0),
+('Beverages', 'Juice', 25, 8, '2024-04-10', 0),
+('Snacks', 'Potato Chips', 30, 5, '2023-11-30', 0),
+('Snacks', 'Chocolate Bar', 10, 12, '2023-11-30', 0),
+('Snacks', 'Biscuits', 18, 7, '2024-01-15', 0),
+('Canned Goods', 'Canned Tuna', 45, 6, '2025-02-28', 0),
+('Canned Goods', 'Canned Pineapple', 35, 4, '2025-06-01', 0),
+('Canned Goods', 'Canned Veggies', 25, 10, '2024-12-10', 0),
+('Condiments', 'Soy Sauce', 20, 3, '2026-05-05', 0),
+('Condiments', 'Ketchup', 15, 5, '2024-09-01', 0),
+('Condiments', 'Cooking Oil', 80, 2, '2025-03-20', 0),
+('Staples', 'Rice', 50, 20, '2025-10-01', 0),
+('Staples', 'Sugar', 40, 15, '2025-10-01', 0),
+('Staples', 'Salt', 10, 25, '2025-10-01', 0),
+('Personal Care', 'Bar Soap', 20, 10, '2025-10-15', 0),
+('Personal Care', 'Toothpaste', 45, 8, '2024-11-20', 0),
+('Personal Care', 'Shampoo', 90, 4, '2025-01-05', 0),
+('Household Items', 'Dishwashing Liquid', 55, 6, '2024-07-15', 0),
+('Household Items', 'Toilet Paper', 40, 10, '2025-12-01', 0),
+('Fresh Produce', 'Apples', 60, 10, '2024-10-20', 0),
+('Fresh Produce', 'Tomatoes', 50, 8, '2024-10-18', 0),
+('Dairy Products', 'Fresh Milk', 60, 5, '2024-10-17', 0),
+('Dairy Products', 'Cheese', 100, 3, '2024-12-01', 0),
+('Frozen Goods', 'Ice Cream', 120, 2, '2025-05-10', 0);
